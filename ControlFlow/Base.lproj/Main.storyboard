@@ -26,13 +26,6 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oE4-CS-NJR">
-                                <rect key="frame" x="159" y="414" width="282" height="94"/>
-                                <state key="normal" image="Play"/>
-                                <connections>
-                                    <action selector="buttonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sPX-rx-qji"/>
-                                </connections>
-                            </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0MF-ff-imX">
                                 <rect key="frame" x="160" y="225" width="281" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -43,6 +36,13 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oE4-CS-NJR">
+                                <rect key="frame" x="159" y="414" width="282" height="94"/>
+                                <state key="normal" image="Play"/>
+                                <connections>
+                                    <action selector="buttonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sPX-rx-qji"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.20194534629999999" green="0.51204349370000002" blue="0.54640461389999995" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -51,8 +51,12 @@
                             <constraint firstItem="S3g-8F-g1O" firstAttribute="trailing" secondItem="0MF-ff-imX" secondAttribute="trailing" id="LHc-yQ-fiL"/>
                             <constraint firstItem="S3g-8F-g1O" firstAttribute="centerX" secondItem="oE4-CS-NJR" secondAttribute="centerX" id="OiW-S8-SxA"/>
                             <constraint firstItem="S3g-8F-g1O" firstAttribute="top" secondItem="0MF-ff-imX" secondAttribute="bottom" constant="33" id="Spx-ud-TP0"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="oE4-CS-NJR" secondAttribute="bottom" constant="92" id="XQH-al-VE6"/>
-                            <constraint firstItem="S3g-8F-g1O" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="288" id="fVG-eF-jZB"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="oE4-CS-NJR" secondAttribute="bottom" constant="92" id="XQH-al-VE6">
+                                <variation key="widthClass=compact" constant="138"/>
+                            </constraint>
+                            <constraint firstItem="S3g-8F-g1O" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="288" id="fVG-eF-jZB">
+                                <variation key="widthClass=compact" constant="255"/>
+                            </constraint>
                             <constraint firstItem="S3g-8F-g1O" firstAttribute="trailing" secondItem="oE4-CS-NJR" secondAttribute="trailing" id="nwI-C9-bUi"/>
                             <constraint firstItem="oE4-CS-NJR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="opg-4s-qyg"/>
                             <constraint firstItem="Jur-1h-AW3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="73" id="w7C-bm-SPq"/>

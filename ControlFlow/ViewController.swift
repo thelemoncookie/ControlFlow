@@ -31,6 +31,8 @@ class ViewController: UIViewController {
   
   
   @IBAction func buttonClicked(sender: AnyObject) {
+    self.ageTextField.resignFirstResponder()
+    self.nameTextField.resignFirstResponder()
     if let age = ageTextField.text as String! {
       if let ageInt = Int(age) {
         if ageInt >= 18 {
