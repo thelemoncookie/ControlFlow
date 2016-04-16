@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ControlFlow" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, enter your credentials to confirm eligibility." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jur-1h-AW3">
+                                <rect key="frame" x="114" y="93" width="360" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="360" id="AL7-Vh-DKM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oE4-CS-NJR">
+                                <rect key="frame" x="159" y="414" width="282" height="94"/>
+                                <state key="normal" image="Play"/>
+                                <connections>
+                                    <action selector="buttonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sPX-rx-qji"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0MF-ff-imX">
+                                <rect key="frame" x="160" y="225" width="281" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="age" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S3g-8F-g1O">
+                                <rect key="frame" x="160" y="288" width="281" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.20194534629999999" green="0.51204349370000002" blue="0.54640461389999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Jur-1h-AW3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-6" id="GL3-GH-nKm"/>
+                            <constraint firstItem="S3g-8F-g1O" firstAttribute="leading" secondItem="0MF-ff-imX" secondAttribute="leading" id="GmL-BG-QvT"/>
+                            <constraint firstItem="S3g-8F-g1O" firstAttribute="trailing" secondItem="0MF-ff-imX" secondAttribute="trailing" id="LHc-yQ-fiL"/>
+                            <constraint firstItem="S3g-8F-g1O" firstAttribute="centerX" secondItem="oE4-CS-NJR" secondAttribute="centerX" id="OiW-S8-SxA"/>
+                            <constraint firstItem="S3g-8F-g1O" firstAttribute="top" secondItem="0MF-ff-imX" secondAttribute="bottom" constant="33" id="Spx-ud-TP0"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="oE4-CS-NJR" secondAttribute="bottom" constant="92" id="XQH-al-VE6"/>
+                            <constraint firstItem="S3g-8F-g1O" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="288" id="fVG-eF-jZB"/>
+                            <constraint firstItem="S3g-8F-g1O" firstAttribute="trailing" secondItem="oE4-CS-NJR" secondAttribute="trailing" id="nwI-C9-bUi"/>
+                            <constraint firstItem="oE4-CS-NJR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="opg-4s-qyg"/>
+                            <constraint firstItem="Jur-1h-AW3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="73" id="w7C-bm-SPq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ageTextField" destination="S3g-8F-g1O" id="Wyo-Cb-NT8"/>
+                        <outlet property="nameTextField" destination="0MF-ff-imX" id="8Q1-7t-8kb"/>
+                        <outlet property="outputLabel" destination="Jur-1h-AW3" id="TF4-2U-sOG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="153" y="284"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Play" width="282" height="94"/>
+    </resources>
+</document>
