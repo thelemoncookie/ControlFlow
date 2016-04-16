@@ -5,6 +5,42 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
+        <!--Shopping List-->
+        <scene sceneID="hVl-qz-bXp">
+            <objects>
+                <viewController id="whb-zA-M22" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VIJ-ac-bg0"/>
+                        <viewControllerLayoutGuide type="bottom" id="uTP-vN-VBG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="V5C-ZI-723">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.98636967679999998" green="0.75125915860000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Shopping List" image="Shopping Cart-50" id="tbG-Tg-AnP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lHX-cJ-0B0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-751.5" y="638"/>
+        </scene>
+        <!--Fun Facts-->
+        <scene sceneID="O6R-bp-Tqt">
+            <objects>
+                <viewController id="fpW-7C-cl0" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="D7X-SF-vDy"/>
+                        <viewControllerLayoutGuide type="bottom" id="JzU-Be-wqg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="B0H-xi-5Ol">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.55991398979999996" green="0.78550420600000004" blue="0.80198789270000004" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Fun Facts" image="Spy Male-50" id="2QS-pz-pYK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EJv-op-c6c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="82.5" y="650"/>
+        </scene>
         <!--Age Game-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -17,6 +53,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_all" translatesAutoresizingMaskIntoConstraints="NO" id="0VP-kh-qAv">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, enter your credentials to confirm eligibility." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jur-1h-AW3">
                                 <rect key="frame" x="114" y="93" width="360" height="41"/>
                                 <constraints>
@@ -26,6 +65,13 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oE4-CS-NJR">
+                                <rect key="frame" x="159" y="414" width="282" height="94"/>
+                                <state key="normal" image="Play"/>
+                                <connections>
+                                    <action selector="buttonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sPX-rx-qji"/>
+                                </connections>
+                            </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0MF-ff-imX">
                                 <rect key="frame" x="160" y="225" width="281" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -36,18 +82,14 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oE4-CS-NJR">
-                                <rect key="frame" x="159" y="414" width="282" height="94"/>
-                                <state key="normal" image="Play"/>
-                                <connections>
-                                    <action selector="buttonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sPX-rx-qji"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.20194534629999999" green="0.51204349370000002" blue="0.54640461389999995" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="0VP-kh-qAv" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="9fa-UU-avj"/>
+                            <constraint firstItem="0VP-kh-qAv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="CDf-Yb-hhE"/>
                             <constraint firstItem="Jur-1h-AW3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-6" id="GL3-GH-nKm"/>
                             <constraint firstItem="S3g-8F-g1O" firstAttribute="leading" secondItem="0MF-ff-imX" secondAttribute="leading" id="GmL-BG-QvT"/>
+                            <constraint firstItem="0VP-kh-qAv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HQl-0d-ePV"/>
                             <constraint firstItem="S3g-8F-g1O" firstAttribute="trailing" secondItem="0MF-ff-imX" secondAttribute="trailing" id="LHc-yQ-fiL"/>
                             <constraint firstItem="S3g-8F-g1O" firstAttribute="centerX" secondItem="oE4-CS-NJR" secondAttribute="centerX" id="OiW-S8-SxA"/>
                             <constraint firstItem="S3g-8F-g1O" firstAttribute="top" secondItem="0MF-ff-imX" secondAttribute="bottom" constant="33" id="Spx-ud-TP0"/>
@@ -59,10 +101,33 @@
                             </constraint>
                             <constraint firstItem="S3g-8F-g1O" firstAttribute="trailing" secondItem="oE4-CS-NJR" secondAttribute="trailing" id="nwI-C9-bUi"/>
                             <constraint firstItem="oE4-CS-NJR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="opg-4s-qyg"/>
+                            <constraint firstItem="0VP-kh-qAv" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="s8t-VK-5Vp"/>
                             <constraint firstItem="Jur-1h-AW3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="73" id="w7C-bm-SPq"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="0VP-kh-qAv"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="9fa-UU-avj"/>
+                                <exclude reference="CDf-Yb-hhE"/>
+                                <exclude reference="HQl-0d-ePV"/>
+                                <exclude reference="s8t-VK-5Vp"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="0VP-kh-qAv"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="9fa-UU-avj"/>
+                                <include reference="CDf-Yb-hhE"/>
+                                <include reference="HQl-0d-ePV"/>
+                                <include reference="s8t-VK-5Vp"/>
+                            </mask>
+                        </variation>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Age Game" id="wyy-q4-slM"/>
+                    <tabBarItem key="tabBarItem" title="Age Game" image="ID Card Filled-50" id="wyy-q4-slM"/>
                     <connections>
                         <outlet property="ageTextField" destination="S3g-8F-g1O" id="Wyo-Cb-NT8"/>
                         <outlet property="nameTextField" destination="0MF-ff-imX" id="8Q1-7t-8kb"/>
@@ -72,42 +137,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="952.5" y="649"/>
-        </scene>
-        <!--Item 2-->
-        <scene sceneID="fHl-LG-FNr">
-            <objects>
-                <viewController id="hoj-dK-cDc" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="d9S-Js-N5z"/>
-                        <viewControllerLayoutGuide type="bottom" id="mlB-q2-WNf"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="ECs-Vd-I3q">
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.20194534629999999" green="0.51204349370000002" blue="0.54640461389999995" alpha="1" colorSpace="calibratedRGB"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="Uf4-1C-wjK"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bMj-Ld-8PH" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-22.5" y="656"/>
-        </scene>
-        <!--Item 1-->
-        <scene sceneID="EYl-jN-SNM">
-            <objects>
-                <viewController id="1F4-mH-i6j" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Zhe-vy-E8c"/>
-                        <viewControllerLayoutGuide type="bottom" id="g32-Hc-Iob"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="MLj-QL-PkU">
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.20194534629999999" green="0.51204349370000002" blue="0.54640461389999995" alpha="1" colorSpace="calibratedRGB"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="T9j-Z5-P3f"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ao8-dH-hIU" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-847.5" y="649"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="U3N-fh-SuC">
@@ -119,9 +148,9 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="1F4-mH-i6j" kind="relationship" relationship="viewControllers" id="rD0-lo-j9K"/>
-                        <segue destination="hoj-dK-cDc" kind="relationship" relationship="viewControllers" id="Gcv-FG-MmH"/>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="OcX-vn-Gi9"/>
+                        <segue destination="whb-zA-M22" kind="relationship" relationship="viewControllers" id="ghN-yW-Suj"/>
+                        <segue destination="fpW-7C-cl0" kind="relationship" relationship="viewControllers" id="5bl-Kc-e0B"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EYU-v3-Ctv" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -130,6 +159,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="ID Card Filled-50" width="50" height="50"/>
         <image name="Play" width="282" height="94"/>
+        <image name="Shopping Cart-50" width="25" height="25"/>
+        <image name="Spy Male-50" width="25" height="25"/>
+        <image name="background_all" width="640" height="960"/>
     </resources>
 </document>
