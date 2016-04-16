@@ -29,9 +29,6 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oE4-CS-NJR">
                                 <rect key="frame" x="159" y="414" width="282" height="94"/>
                                 <state key="normal" image="Play"/>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="59" y="414" width="282" height="94"/>
-                                </variation>
                                 <connections>
                                     <action selector="buttonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sPX-rx-qji"/>
                                 </connections>
