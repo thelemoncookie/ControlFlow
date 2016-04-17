@@ -14,6 +14,8 @@
 		D21470C71CC1E72F00C061F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D21470C51CC1E72F00C061F5 /* LaunchScreen.storyboard */; };
 		D21470D21CC1E73000C061F5 /* ControlFlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21470D11CC1E73000C061F5 /* ControlFlowTests.swift */; };
 		D21470DD1CC1E73000C061F5 /* ControlFlowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21470DC1CC1E73000C061F5 /* ControlFlowUITests.swift */; };
+		D2BF05D61CC3753F00A08371 /* FunFactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BF05D51CC3753F00A08371 /* FunFactsViewController.swift */; };
+		D2BF05D81CC3A59000A08371 /* AddingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BF05D71CC3A59000A08371 /* AddingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		D21470D81CC1E73000C061F5 /* ControlFlowUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ControlFlowUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D21470DC1CC1E73000C061F5 /* ControlFlowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlFlowUITests.swift; sourceTree = "<group>"; };
 		D21470DE1CC1E73000C061F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2BF05D51CC3753F00A08371 /* FunFactsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunFactsViewController.swift; sourceTree = "<group>"; };
+		D2BF05D71CC3A59000A08371 /* AddingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,8 @@
 				D21470BC1CC1E72F00C061F5 /* AppDelegate.swift */,
 				D21470BE1CC1E72F00C061F5 /* ViewController.swift */,
 				D21470C01CC1E72F00C061F5 /* Main.storyboard */,
+				D2BF05D71CC3A59000A08371 /* AddingViewController.swift */,
+				D2BF05D51CC3753F00A08371 /* FunFactsViewController.swift */,
 				D21470C31CC1E72F00C061F5 /* Assets.xcassets */,
 				D21470C51CC1E72F00C061F5 /* LaunchScreen.storyboard */,
 				D21470C81CC1E72F00C061F5 /* Info.plist */,
@@ -259,8 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2BF05D61CC3753F00A08371 /* FunFactsViewController.swift in Sources */,
 				D21470BF1CC1E72F00C061F5 /* ViewController.swift in Sources */,
 				D21470BD1CC1E72F00C061F5 /* AppDelegate.swift in Sources */,
+				D2BF05D81CC3A59000A08371 /* AddingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,6 +495,7 @@
 				D21470E31CC1E73000C061F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D21470E41CC1E73000C061F5 /* Build configuration list for PBXNativeTarget "ControlFlowTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +504,7 @@
 				D21470E61CC1E73000C061F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D21470E71CC1E73000C061F5 /* Build configuration list for PBXNativeTarget "ControlFlowUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +513,7 @@
 				D21470E91CC1E73000C061F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
