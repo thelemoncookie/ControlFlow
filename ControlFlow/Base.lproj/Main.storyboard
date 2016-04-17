@@ -39,13 +39,6 @@
                                     </mask>
                                 </variation>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ow1-AE-52O">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" image="ADD"/>
-                                <connections>
-                                    <action selector="buttonPressed:" destination="whb-zA-M22" eventType="touchUpInside" id="dcb-wh-pct"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter some numbers!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o3a-L2-Jxp">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <constraints>
@@ -75,15 +68,30 @@
                                     <action selector="buttonClearPressed:" destination="whb-zA-M22" eventType="touchUpInside" id="UDJ-Y8-YHn"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ow1-AE-52O">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="ADD"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="whb-zA-M22" eventType="touchUpInside" id="dcb-wh-pct"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.98636967679999998" green="0.75125915860000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="ycm-GC-sDm" firstAttribute="trailing" secondItem="Ow1-AE-52O" secondAttribute="trailing" id="57p-Oo-spL"/>
-                            <constraint firstItem="tLo-AG-JS2" firstAttribute="top" secondItem="VIJ-ac-bg0" secondAttribute="bottom" constant="83" id="5mn-PY-vTC"/>
-                            <constraint firstItem="o3a-L2-Jxp" firstAttribute="trailing" secondItem="tLo-AG-JS2" secondAttribute="trailing" id="8w7-Nj-NU5"/>
-                            <constraint firstItem="Ow1-AE-52O" firstAttribute="trailing" secondItem="tLo-AG-JS2" secondAttribute="trailing" id="G5h-uX-582"/>
+                            <constraint firstItem="tLo-AG-JS2" firstAttribute="top" secondItem="VIJ-ac-bg0" secondAttribute="bottom" constant="83" id="5mn-PY-vTC">
+                                <variation key="widthClass=compact" constant="35"/>
+                            </constraint>
+                            <constraint firstItem="o3a-L2-Jxp" firstAttribute="trailing" secondItem="tLo-AG-JS2" secondAttribute="trailing" id="8w7-Nj-NU5">
+                                <variation key="widthClass=compact" constant="2"/>
+                            </constraint>
+                            <constraint firstItem="Ow1-AE-52O" firstAttribute="trailing" secondItem="tLo-AG-JS2" secondAttribute="trailing" id="G5h-uX-582">
+                                <variation key="widthClass=compact" constant="2"/>
+                            </constraint>
                             <constraint firstItem="ycm-GC-sDm" firstAttribute="centerX" secondItem="V5C-ZI-723" secondAttribute="centerX" id="Qsc-tV-8cF"/>
-                            <constraint firstItem="o3a-L2-Jxp" firstAttribute="top" secondItem="tLo-AG-JS2" secondAttribute="bottom" constant="15" id="TB3-Ni-RX5"/>
+                            <constraint firstItem="o3a-L2-Jxp" firstAttribute="top" secondItem="tLo-AG-JS2" secondAttribute="bottom" constant="15" id="TB3-Ni-RX5">
+                                <variation key="widthClass=compact" constant="-4"/>
+                            </constraint>
                             <constraint firstItem="uuc-sl-2eg" firstAttribute="leading" secondItem="V5C-ZI-723" secondAttribute="leadingMargin" constant="-20" id="UQl-hD-eV7"/>
                             <constraint firstItem="Ow1-AE-52O" firstAttribute="top" secondItem="ycm-GC-sDm" secondAttribute="bottom" constant="8" symbolic="YES" id="lVb-39-c9g"/>
                             <constraint firstItem="uuc-sl-2eg" firstAttribute="centerX" secondItem="V5C-ZI-723" secondAttribute="centerX" id="q4N-Lj-5s8"/>
@@ -91,16 +99,20 @@
                             <constraint firstItem="uuc-sl-2eg" firstAttribute="top" secondItem="V5C-ZI-723" secondAttribute="top" id="vG3-iU-Gb8"/>
                             <constraint firstItem="Ow1-AE-52O" firstAttribute="centerX" secondItem="V5C-ZI-723" secondAttribute="centerX" id="wGB-WH-Egl"/>
                             <constraint firstItem="Ow1-AE-52O" firstAttribute="leading" secondItem="V5C-ZI-723" secondAttribute="leadingMargin" constant="13" id="yF5-39-hQP"/>
-                            <constraint firstItem="uTP-vN-VBG" firstAttribute="top" secondItem="Ow1-AE-52O" secondAttribute="bottom" constant="61" id="yjz-wm-Pjb"/>
-                            <constraint firstItem="Ow1-AE-52O" firstAttribute="leading" secondItem="tLo-AG-JS2" secondAttribute="leading" id="zs0-Ko-EBA"/>
+                            <constraint firstItem="uTP-vN-VBG" firstAttribute="top" secondItem="Ow1-AE-52O" secondAttribute="bottom" constant="61" id="yjz-wm-Pjb">
+                                <variation key="widthClass=compact" constant="168"/>
+                            </constraint>
+                            <constraint firstItem="Ow1-AE-52O" firstAttribute="leading" secondItem="tLo-AG-JS2" secondAttribute="leading" id="zs0-Ko-EBA">
+                                <variation key="widthClass=compact" constant="2"/>
+                            </constraint>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="uuc-sl-2eg"/>
                                 <exclude reference="tLo-AG-JS2"/>
-                                <exclude reference="Ow1-AE-52O"/>
                                 <exclude reference="o3a-L2-Jxp"/>
                                 <exclude reference="ycm-GC-sDm"/>
+                                <exclude reference="Ow1-AE-52O"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="UQl-hD-eV7"/>
@@ -124,9 +136,9 @@
                             <mask key="subviews">
                                 <include reference="uuc-sl-2eg"/>
                                 <include reference="tLo-AG-JS2"/>
-                                <include reference="Ow1-AE-52O"/>
                                 <include reference="o3a-L2-Jxp"/>
                                 <include reference="ycm-GC-sDm"/>
+                                <include reference="Ow1-AE-52O"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="UQl-hD-eV7"/>

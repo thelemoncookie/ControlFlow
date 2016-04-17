@@ -19,7 +19,7 @@ class AddingViewController: UIViewController {
   @IBOutlet weak var button: UIButton!
   
   @IBAction func buttonPressed(sender: AnyObject) {
-    
+    self.textfield1.resignFirstResponder()
     if let number = Int(textfield1.text!) {
       total = total + number
       labelField.text = "\(total)"
@@ -33,6 +33,7 @@ class AddingViewController: UIViewController {
   @IBOutlet weak var buttonClear: UIButton!
 
   @IBAction func buttonClearPressed(sender: AnyObject) {
+    self.textfield1.resignFirstResponder()
     if var boardIsZero = Int(textfield1.text!) {
             boardIsZero = clearBoard
       labelField.text = "\(clearBoard)"
@@ -40,4 +41,23 @@ class AddingViewController: UIViewController {
     
   }
   var clearBoard: Int = 0
+  
+  
+  
+  
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    textfield1.keyboardType = UIKeyboardType.NumberPad
+    // Do any additional setup after loading the view, typically from a nib.
+  }
+  
+  override func didReceiveMemoryWarning() {
+    super.didReceiveMemoryWarning()
+    // Dispose of any resources that can be recreated.
+  }
+  
+  
+ 
+  
 }

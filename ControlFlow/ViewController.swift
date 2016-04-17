@@ -12,6 +12,7 @@ class ViewController: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
+    ageTextField.keyboardType = UIKeyboardType.NumberPad
     // Do any additional setup after loading the view, typically from a nib.
   }
 
@@ -28,6 +29,7 @@ class ViewController: UIViewController {
   
   
   @IBOutlet weak var ageTextField: UITextField!
+  
   
   
   @IBAction func buttonClicked(sender: AnyObject) {
