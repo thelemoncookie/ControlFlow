@@ -157,7 +157,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lHX-cJ-0B0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-751.5" y="638"/>
+            <point key="canvasLocation" x="-73.5" y="685"/>
         </scene>
         <!--Fun Facts-->
         <scene sceneID="O6R-bp-Tqt">
@@ -174,9 +174,58 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_all" translatesAutoresizingMaskIntoConstraints="NO" id="GqL-oz-GVC">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nu3-LX-t7r">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="265" id="0vQ-6s-tVO"/>
+                                    <constraint firstAttribute="height" constant="90" id="DT9-ht-cxd"/>
+                                </constraints>
+                                <state key="normal" image="Facts"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="0vQ-6s-tVO"/>
+                                        <exclude reference="DT9-ht-cxd"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="0vQ-6s-tVO"/>
+                                        <include reference="DT9-ht-cxd"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="showFunFactButton:" destination="fpW-7C-cl0" eventType="touchUpInside" id="GG3-s0-ZWZ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click the FACTS button for some interesting 💩" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kG7-zD-LLw">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="286" id="Gtc-dZ-jVJ"/>
+                                    <constraint firstAttribute="height" constant="216" id="e9a-Hs-Ii7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Gtc-dZ-jVJ"/>
+                                        <exclude reference="e9a-Hs-Ii7"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="Gtc-dZ-jVJ"/>
+                                        <include reference="e9a-Hs-Ii7"/>
+                                    </mask>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.55991398979999996" green="0.78550420600000004" blue="0.80198789270000004" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="kG7-zD-LLw" firstAttribute="top" secondItem="D7X-SF-vDy" secondAttribute="bottom" constant="50" id="6EH-94-djk"/>
+                            <constraint firstItem="nu3-LX-t7r" firstAttribute="centerX" secondItem="B0H-xi-5Ol" secondAttribute="centerX" id="6Uv-T2-0PO"/>
+                            <constraint firstItem="JzU-Be-wqg" firstAttribute="top" secondItem="nu3-LX-t7r" secondAttribute="bottom" constant="71" id="PIu-qa-0cC"/>
+                            <constraint firstItem="kG7-zD-LLw" firstAttribute="centerX" secondItem="B0H-xi-5Ol" secondAttribute="centerX" id="iKf-zO-gag"/>
                             <constraint firstItem="GqL-oz-GVC" firstAttribute="centerX" secondItem="B0H-xi-5Ol" secondAttribute="centerX" id="iY2-no-GwC"/>
                             <constraint firstItem="GqL-oz-GVC" firstAttribute="bottom" secondItem="JzU-Be-wqg" secondAttribute="top" id="jLe-cn-azg"/>
                             <constraint firstItem="GqL-oz-GVC" firstAttribute="leading" secondItem="B0H-xi-5Ol" secondAttribute="leading" id="k6o-qf-ffT"/>
@@ -185,31 +234,47 @@
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="GqL-oz-GVC"/>
+                                <exclude reference="nu3-LX-t7r"/>
+                                <exclude reference="kG7-zD-LLw"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="iY2-no-GwC"/>
                                 <exclude reference="jLe-cn-azg"/>
                                 <exclude reference="k6o-qf-ffT"/>
                                 <exclude reference="rwq-AW-zMJ"/>
+                                <exclude reference="6EH-94-djk"/>
+                                <exclude reference="iKf-zO-gag"/>
+                                <exclude reference="6Uv-T2-0PO"/>
+                                <exclude reference="PIu-qa-0cC"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="GqL-oz-GVC"/>
+                                <include reference="nu3-LX-t7r"/>
+                                <include reference="kG7-zD-LLw"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="iY2-no-GwC"/>
                                 <include reference="jLe-cn-azg"/>
                                 <include reference="k6o-qf-ffT"/>
                                 <include reference="rwq-AW-zMJ"/>
+                                <include reference="6EH-94-djk"/>
+                                <include reference="iKf-zO-gag"/>
+                                <include reference="6Uv-T2-0PO"/>
+                                <include reference="PIu-qa-0cC"/>
                             </mask>
                         </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="Fun Facts" image="Spy Male-50" id="2QS-pz-pYK"/>
+                    <connections>
+                        <outlet property="buttonFact" destination="nu3-LX-t7r" id="EJI-5h-KQA"/>
+                        <outlet property="funFactLabel" destination="kG7-zD-LLw" id="LwE-SU-hQa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EJv-op-c6c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="85.5" y="632"/>
+            <point key="canvasLocation" x="772.5" y="685"/>
         </scene>
         <!--Age Game-->
         <scene sceneID="tne-QT-ifu">
@@ -306,7 +371,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="952.5" y="649"/>
+            <point key="canvasLocation" x="-850.5" y="685"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="U3N-fh-SuC">
@@ -331,6 +396,7 @@
     <resources>
         <image name="ADD" width="280" height="81"/>
         <image name="Clear" width="427" height="94"/>
+        <image name="Facts" width="452" height="112"/>
         <image name="ID Card Filled-50" width="50" height="50"/>
         <image name="Play" width="282" height="94"/>
         <image name="Shopping Cart-50" width="25" height="25"/>

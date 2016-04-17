@@ -35,12 +35,17 @@ class ViewController: UIViewController {
     self.nameTextField.resignFirstResponder()
     if let age = ageTextField.text as String! {
       if let ageInt = Int(age) {
-        if ageInt >= 18 {
-          outputLabel.text = "You're old enough to go to Wet on Wellington. Have fun!"
-        } else {
-          outputLabel.text = "You're not old enough for shite."
+        if ageInt >= 21 {
+          outputLabel.text = "\(nameTextField.text!), you are old enough to drive yourself to Wet on Wellington and buy yourself a drink."
+        } else if ageInt >= 18 {
+          outputLabel.text = "\(nameTextField.text!), you are old enough to go to Wet on Wellington"
+        } else if ageInt >= 16 {
+          outputLabel.text = "\(nameTextField.text!)You are old enough to drive."
+        } else if ageInt >= 1 {
+          outputLabel.text = "\(nameTextField.text!)You aren't old enough for shite."
+        } else if ageInt <= 0 {
+          outputLabel.text = "\(nameTextField.text!)Enter a real valid age."
         }
-      }
     }
     
   }
@@ -52,7 +57,7 @@ class ViewController: UIViewController {
   
   
   
-  
+  }
   
   
   
