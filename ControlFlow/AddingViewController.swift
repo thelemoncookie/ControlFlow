@@ -34,10 +34,9 @@ class AddingViewController: UIViewController {
 
   @IBAction func buttonClearPressed(sender: AnyObject) {
     self.textfield1.resignFirstResponder()
-    if var boardIsZero = Int(textfield1.text!) {
-            boardIsZero = clearBoard
-      labelField.text = "\(clearBoard)"
-    }
+      textfield1.text = ""
+      labelField.text = "0"
+      total = 0
     
   }
   var clearBoard: Int = 0
